@@ -317,7 +317,7 @@ export default {
     noCost: 'Sans péage',
     tableEyebrow: 'Toutes les liaisons',
     tableTitle: 'Durées, péages et *réservations*',
-    cols: { link: 'Liaison', mode: 'Mode', time: 'Time', cost: 'Péage ou tarif', booking: 'Réservation et remarques' },
+    cols: { link: 'Liaison', mode: 'Mode', time: 'Durée', cost: 'Péage ou tarif', booking: 'Réservation et remarques' },
     rulesEyebrow: 'Sur la route',
     rulesTitle: 'Conduire dans les îles',
     rules: [
