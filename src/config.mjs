@@ -16,8 +16,8 @@ export default {
 
   // Live site URL (no trailing slash). Format: eighteenislands.tourground.com
   siteUrl: 'https://eighteenislands.tourground.com',
-  // Vercel production URL (filled in after the first deploy)
-  vercelUrl: 'https://faroe-islands.vercel.app',
+  // Live Vercel production URL
+  vercelUrl: 'https://eighteen-islands.vercel.app',
 
   contact: {
     // The only email address used anywhere on the site

@@ -2,7 +2,7 @@
 
 A fast, static, four-language travel website for the Faroe Islands: trips planned around the weather.
 
-- **Live site:** __LIVE_URL__
+- **Live site:** https://eighteen-islands.vercel.app (Vercel project `eighteen-islands`, team "Benjamin - Sevo")
 - **Intended domain:** https://eighteenislands.tourground.com (set in `src/config.mjs → siteUrl`, used for canonical URLs, hreflang, the sitemap and JSON-LD)
 - **Languages:** English at `/`, French at `/fr/`, German at `/de/`, Spanish at `/es/`
 
@@ -91,7 +91,7 @@ The form posts to [FormSubmit](https://formsubmit.co), which forwards submission
 
 ## Performance
 
-- No render-blocking JavaScript; `site.js` is deferred (about 4 KB). The planner scripts load only on their own pages.
+- No render-blocking JavaScript; `site.js` is deferred (about 5 KB minified). The planner scripts load only on their own pages.
 - CSS is minified and inlined into each page.
 - Fonts: three self-hosted woff2 files, Latin subset, `font-display: swap`, with the two main ones preloaded.
 - Images: AVIF and WebP at 480 to 2560 px with `srcset`/`sizes`, and `width`/`height` on every image. Below-the-fold images are lazy-loaded. The hero is preloaded with `fetchpriority="high"`.

@@ -166,7 +166,8 @@
       const data = Object.fromEntries(new FormData(form).entries());
       try {
         const res = await fetch(form.dataset.endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(data) });
-        if (!res.ok) throw new Error(res.status);
+        const out = await res.json().catch(() => ({}));
+        if (!res.ok || out.success === false || out.success === 'false') throw new Error(out.message || res.status);
         location.href = form.dataset.thanks;
       } catch (err) {
         status.textContent = status.dataset.error;
