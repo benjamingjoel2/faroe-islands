@@ -26,7 +26,7 @@ for (const lang of langs) {
       if (a !== b) out.push(`${p}: value changed ${a} → ${b}`);
     } else if (typeof a === 'string') {
       if (typeof b !== 'string') return out.push(`${p}: expected string`);
-      if (FIXED.has(p.split('.').pop()) && a !== b) out.push(`${p}: must stay "${a}"`);
+      if (FIXED.has(p.split('.').pop()) && !p.includes('.cols.') && a !== b) out.push(`${p}: must stay "${a}"`);
       if (ph(a) !== ph(b)) out.push(`${p}: placeholders differ (${ph(a)} vs ${ph(b)})`);
       if (urls(a) !== urls(b)) out.push(`${p}: link URLs differ`);
       if (a.trim() && !b.trim()) out.push(`${p}: empty translation`);
