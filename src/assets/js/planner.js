@@ -92,7 +92,7 @@
       if (BOOK.has(k)) flags.push(`<span class="chip chip--ok">${esc(T.fBook)}</span>`);
       if (k === 'mykines' && heliDay(days[i])) flags.push(`<span class="chip">${esc(T.fHeli)}</span>`);
       if (car.value === 'nocar' && B.nocar) flags.push(`<span class="chip">${esc(B.nocar)}</span>`);
-      return `<li class="${k === 'spare' ? 'spare' : ''}"><span class="d">${esc(fmt(T.dayN, { n: i + 1 }))}<br>${esc(dfmt.format(days[i]))}</span><div><h4>${esc(B.t)}</h4><p>${esc(B.p)}</p>${flags.length ? `<div class="flags">${flags.join('')}</div>` : ''}</div></li>`;
+      return `<li class="${k === 'spare' ? 'spare' : ''}"><span class="d">${esc(fmt(T.dayN, { n: i + 1 }))}<br>${esc(dfmt.format(days[i]))}</span><div><h3 class="h4">${esc(B.t)}</h3><p>${esc(B.p)}</p>${flags.length ? `<div class="flags">${flags.join('')}</div>` : ''}</div></li>`;
     }).join('') + (winter ? `<li><span class="d">${esc(T.noteLabel)}</span><div><p>${esc(T.winterNote)}</p></div></li>` : '') + (!mykinesOk ? `<li><span class="d">${esc(T.noteLabel)}</span><div><p>${esc(T.noMykines)}</p></div></li>` : '');
     $('p-cta').innerHTML = `<a class="btn" href="${D.enquire}?arrive=${iso(a)}&nights=${nights}"><span>${esc(T.cta)}</span><span class="btn__i"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M3 11 11 3M4.5 3H11v6.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span></a>`;
     $('p-res').hidden = false;

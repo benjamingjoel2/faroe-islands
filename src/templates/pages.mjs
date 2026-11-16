@@ -117,7 +117,7 @@ export const home = (C) => {
   const tl = H.day.items.map(it => {
     const [hh, mm] = it.time.split(':').map(Number);
     const frac = ((hh * 60 + mm) - rise) / (set - rise);
-    return `<li data-time="${it.time}" data-frac="${frac.toFixed(3)}"><time>${it.time}</time><div><h4>${esc(it.t)}</h4><p>${esc(it.p)}</p>${it.flag ? `<span class="chip chip--dot flag">${esc(it.flag)}</span>` : ''}</div><div class="media">${pic(C, it.img, { sizes: '110px', maxW: 480 })}</div></li>`;
+    return `<li data-time="${it.time}" data-frac="${frac.toFixed(3)}"><time>${it.time}</time><div><h3 class="h4">${esc(it.t)}</h3><p>${esc(it.p)}</p>${it.flag ? `<span class="chip chip--dot flag">${esc(it.flag)}</span>` : ''}</div><div class="media">${pic(C, it.img, { sizes: '110px', maxW: 480 })}</div></li>`;
   }).join('');
   const walks = WALKS.filter(w => H.access.walks.includes(w.id));
   const faqs = C.pages.faq.groups.flatMap(g => g.items).filter(q => q.home).slice(0, 5);
@@ -205,7 +205,7 @@ ${basalt('fog')}
   <div class="sh rv">${sec(H.access.eyebrow)}<h2 id="acc-h" class="sh__title">${md(H.access.title)}</h2><div class="sh__link">${tlink(href(C.lang, 'hiking-access'), H.access.link)}</div></div>
   <div class="grid"><p class="c-7 lead rv" style="margin-bottom:40px">${md(H.access.text)}</p></div>
   <div class="tbl-wrap"><table class="tbl tbl--stack">
-    <thead><tr><th>${esc(C.tools.access.cols.walk)}</th><th>${esc(C.tools.access.cols.island)}</th><th>${esc(C.tools.access.cols.farmland)}</th><th>${esc(C.tools.access.cols.fee)}</th><th>${esc(C.tools.access.cols.guide)}</th><th></th></tr></thead>
+    <thead><tr><th>${esc(C.tools.access.cols.walk)}</th><th>${esc(C.tools.access.cols.island)}</th><th>${esc(C.tools.access.cols.farmland)}</th><th>${esc(C.tools.access.cols.fee)}</th><th>${esc(C.tools.access.cols.guide)}</th><th><span class="sr-only">${esc(C.ui.common.details)}</span></th></tr></thead>
     <tbody>${walks.map(w => `<tr><td><b>${esc(walkName(C, w.id))}</b></td><td data-l="${esc(C.tools.access.cols.island)}">${esc(C.places[w.region].name)}</td><td data-l="${esc(C.tools.access.cols.farmland)}">${esc(w.farmland ? C.tools.access.yes : C.tools.access.no)}</td><td data-l="${esc(C.tools.access.cols.fee)}">${esc(w.fee != null ? fmt(C.tools.access.feeFrom, { amount: w.fee }) : (w.farmland ? C.tools.access.feeUnknown : C.tools.access.feeNone))}</td><td data-l="${esc(C.tools.access.cols.guide)}">${w.guide === 'required' ? `<span class="chip chip--hot">${esc(C.tools.access.tags.guide)}</span>` : w.guide === 'seasonal' ? `<span class="chip chip--hot">${esc(C.tools.access.tags.guideSeasonal)}</span>` : w.guide === 'optional' ? esc(C.tools.access.optional) : esc(C.tools.access.no)}</td><td class="r"><a class="link" href="${href(C.lang, 'hiking-access')}#walk-${w.id}">${esc(C.ui.common.details)}</a></td></tr>`).join('')}</tbody>
   </table></div>
 </section>
@@ -215,7 +215,7 @@ ${basalt('tar', true)}
   <div class="sh rv">${sec(H.transport.eyebrow)}<h2 id="tr-h" class="sh__title">${md(H.transport.title)}</h2><div class="sh__link">${tlink(href(C.lang, 'getting-around'), H.transport.link)}</div></div>
   <div class="split">
     <div class="stack"><p class="lead rv">${md(H.transport.text)}</p>${mapKey(C)}
-      <ul class="route mt-m">${H.transport.examples.map(x => `<li><span class="ic">${icon[x.mode]}</span><div><h4>${esc(x.t)}</h4><p>${esc(x.p)}</p></div></li>`).join('')}</ul>
+      <ul class="route mt-m">${H.transport.examples.map(x => `<li><span class="ic">${icon[x.mode]}</span><div><h3 class="h4">${esc(x.t)}</h3><p>${esc(x.p)}</p></div></li>`).join('')}</ul>
       <div class="mt-m">${btn(href(C.lang, 'getting-around'), H.transport.cta)}</div>
     </div>
     <div class="rv">${transitMap(C, 'tmap-home')}</div>
@@ -327,7 +327,7 @@ ${J.list.map((j, i) => `
       <p class="small muted">${esc(j.fit)}</p>
       <div>${btn(href(C.lang, 'enquire') + `?journey=${j.id}`, J.cta)}</div>
     </div>
-    <ol class="plan">${j.days.map(d => `<li class="${d.spare ? 'spare' : ''}"><span class="d">${esc(d.d)}</span><div><h4>${esc(d.t)}</h4><p>${md(d.p)}</p>${d.spare ? `<div class="flags"><span class="chip chip--dot">${esc(C.ui.common.spareDay)}</span></div>` : ''}</div></li>`).join('')}</ol>
+    <ol class="plan">${j.days.map(d => `<li class="${d.spare ? 'spare' : ''}"><span class="d">${esc(d.d)}</span><div><h3 class="h4">${esc(d.t)}</h3><p>${md(d.p)}</p>${d.spare ? `<div class="flags"><span class="chip chip--dot">${esc(C.ui.common.spareDay)}</span></div>` : ''}</div></li>`).join('')}</ol>
   </div>
 </section>`).join('')}
 <section class="sec s-wool"><div class="split"><div>${sec(J.noteEyebrow)}</div><div class="prose measure">${paras(J.note)}</div></div></section>`,
@@ -430,8 +430,8 @@ export const enquire = (C) => {
 <section class="sec s-wool">
   <div class="split">
     <div class="stack">
-      ${sec(E.howEyebrow)}
-      <ol class="hl">${E.how.map((s, i) => `<li><span class="mono">0${i + 1}</span><div><h4>${esc(s.t)}</h4><p class="small">${esc(s.p)}</p></div></li>`).join('')}</ol>
+      <h2 class="eyebrow">${esc(E.howEyebrow)}</h2>
+      <ol class="hl">${E.how.map((s, i) => `<li><span class="mono">0${i + 1}</span><div><h3 class="h4">${esc(s.t)}</h3><p class="small">${esc(s.p)}</p></div></li>`).join('')}</ol>
       <div class="mt-m"><p class="eyebrow">${esc(C.ui.footer.contact)}</p><p class="mt-s"><a class="link" href="mailto:${config.contact.email}">${esc(config.contact.email)}</a></p><address class="small mt-s" style="font-style:normal">${addressLines().map(esc).join('<br>')}</address></div>
     </div>
     <form class="form" data-enquiry data-endpoint="${config.formEndpoint}" data-thanks="${href(C.lang, 'enquire/thanks')}" action="${config.formFallback}" method="POST" novalidate>
@@ -448,7 +448,8 @@ export const enquire = (C) => {
       ${field('group', f.group, `<select id="f-group" name="group">${f.groupOpts.map(o => `<option>${esc(o)}</option>`).join('')}</select>`, false)}
       ${field('flex', f.flex, `<select id="f-flex" name="flexibility">${f.flexOpts.map(o => `<option>${esc(o)}</option>`).join('')}</select>`, false)}
       <div class="field full"><fieldset><legend>${esc(f.interests)}</legend>${opts('interests', f.interestOpts)}</fieldset></div>
-      <div class="field full"><fieldset><legend>${esc(f.regions)}</legend>${opts('regions', REGIONS.map(r => C.places[r.id].name))}</fieldset></div>
+      <div class="field full"><fieldset><legend>${esc(f.regions)}</legend><div class="opts">${REGIONS.map(r => `<label class="opt"><input type="checkbox" name="regions" value="${esc(C.places[r.id].name)}" data-id="${r.id}"><span>${esc(C.places[r.id].name)}</span></label>`).join('')}</div></fieldset></div>
+      <input type="hidden" name="journey" id="f-journey" value="">
       ${field('message', f.message, `<textarea id="f-message" name="message" aria-describedby="e-message"></textarea>`, true, '', 'full')}
       <div class="field full" data-req><label class="check" for="f-consent"><input id="f-consent" type="checkbox" name="consent" value="yes"><span>${md(fmt(f.consent, { privacy: href(C.lang, 'privacy') }))}</span></label><p class="err">${esc(f.consentErr)}</p></div>
       <div class="full"><p id="form-status" class="form-status" tabindex="-1" role="alert" data-error="${esc(fmt(f.error, { email: config.contact.email }))}"></p></div>

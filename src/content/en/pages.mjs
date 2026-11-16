@@ -258,7 +258,7 @@ export default {
           { id: 'visa', home: true, q: 'Do we need a visa?', a: ['The Faroe Islands are part of the Kingdom of Denmark but outside the EU and outside Schengen. A Schengen or Danish visa is not valid for the Faroes: if your nationality needs a visa, it must say it is valid for the Faroe Islands. You apply through a Danish mission.', 'EU and Schengen citizens don’t need a visa, but bring a passport or national ID card. If you fly via Copenhagen, you also pass Schengen checks. Rules depend on your nationality, so check with the Danish authorities before you book.'] },
           { id: 'money', home: false, q: 'What currency is used?', a: ['The Faroese króna, which is at par with the Danish krone. Danish notes are accepted everywhere and cards are widely used. Faroese notes are not legal tender in Denmark, but banks there will exchange them.'] },
           { id: 'phones', home: false, q: 'Does EU roaming work?', a: ['No. The Faroes are outside the EU’s “roam like at home” rules. Some providers include the Faroes anyway, so check before you travel, or buy a local SIM or eSIM.'] },
-          { id: 'fee', home: false, q: 'Is there a tourist tax?', a: ['Since 1 February 2026, visitors aged 16 and over in paid accommodation pay a sustainability fee of DKK 20 per night, up to DKK 200 per stay. Your accommodation collects it.'] },
+          { id: 'fee', home: false, q: 'Is there a tourist tax?', a: ['Since 1 February 2026, visitors aged 16 and over in paid accommodation pay a sustainability fee from DKK 20 per night, capped at DKK 200 per stay. Your accommodation collects it.'] },
         ],
       },
       {

@@ -65,7 +65,7 @@ export default {
       summary: 'Down from the church across farmland to the tidal lagoon and the beach.',
       length: 'About 1 hour there and back',
       farmland: 'Private farmland between the church and the beach',
-      pay: 'A farm-gate fee of DKK 75 has been charged, so check the current fee at the gate.',
+      pay: 'A farm-gate fee, from DKK 75, has been charged here; check the current fee at the gate.',
       guide: 'Not required.',
       rules: 'Go at low tide only: the lagoon floods fast. Keep off the hay fields, and leave the farm buildings and the museum yard alone.',
     },

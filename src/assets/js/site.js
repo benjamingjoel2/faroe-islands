@@ -135,6 +135,13 @@
   const form = d.querySelector('form[data-enquiry]');
   if (form) {
     const status = d.getElementById('form-status');
+    const q = new URLSearchParams(location.search);
+    if (/^\d{4}-\d{2}-\d{2}$/.test(q.get('arrive') || '')) form.querySelector('#f-arrive').value = q.get('arrive');
+    const n = +q.get('nights');
+    if (n) { const sel = form.querySelector('#f-nights'); sel.selectedIndex = n <= 4 ? 1 : n <= 7 ? 2 : n <= 10 ? 3 : 4; }
+    const reg = form.querySelector(`[data-id="${(q.get('region') || '').replace(/[^a-z]/g, '')}"]`);
+    if (reg) reg.checked = true;
+    if (q.get('journey')) form.querySelector('#f-journey').value = q.get('journey').replace(/[^a-z-]/g, '');
     const validate = () => {
       let ok = true, first = null;
       form.querySelectorAll('[data-req]').forEach(f => {

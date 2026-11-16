@@ -65,7 +65,7 @@ export default {
       summary: 'Desde la iglesia, bajando por tierras de cultivo hasta la laguna mareal y la playa.',
       length: 'Aprox. 1 hora ida y vuelta',
       farmland: 'Tierras de cultivo privadas entre la iglesia y la playa',
-      pay: 'Se ha cobrado una tarifa de 75 DKK en la cancela de la granja, así que compruebe la tarifa vigente allí.',
+      pay: 'Se ha cobrado una tarifa desde 75 DKK en la cancela de la granja, así que compruebe la tarifa vigente allí.',
       guide: 'No es obligatorio.',
       rules: 'Vaya solo con marea baja: la laguna se inunda rápidamente. No pise los prados de heno y respete los edificios de la granja y el patio del museo.',
     },

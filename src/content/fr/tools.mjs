@@ -65,7 +65,7 @@ export default {
       summary: 'De l’église, à travers les terres agricoles, jusqu’à la lagune à marée et la plage.',
       length: 'Environ 1 heure aller-retour',
       farmland: 'Terres agricoles privées entre l’église et la plage',
-      pay: 'Un droit d’accès de 75 DKK a été perçu à la barrière de la ferme : vérifiez le tarif en vigueur sur place.',
+      pay: 'Un droit d’accès à partir de 75 DKK a été perçu à la barrière de la ferme : vérifiez le tarif en vigueur sur place.',
       guide: 'Non obligatoire.',
       rules: 'Uniquement à marée basse : la lagune se remplit vite. Ne marchez pas dans les prés de fauche, et laissez tranquilles les bâtiments de la ferme et la cour du musée.',
     },

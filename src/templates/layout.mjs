@@ -32,7 +32,7 @@ export const orgJsonLd = (C) => ({
 const langSwitch = (C) => {
   const items = config.locales.map(l => {
     const cur = l === C.lang;
-    return `<a href="${href(l, C.slug)}" hreflang="${l}" lang="${l}"${cur ? ' aria-current="true"' : ''} aria-label="${esc(C.langNames[l])}">${l.toUpperCase()}</a>`;
+    return `<a href="${href(l, C.slug)}" hreflang="${l}" lang="${l}"${cur ? ' aria-current="true"' : ''} title="${esc(C.langNames[l])}">${l.toUpperCase()}<span class="sr-only"> – ${esc(C.langNames[l])}</span></a>`;
   });
   return `<nav class="lang" aria-label="${esc(C.ui.nav.language)}">${items.join('<span class="sep" aria-hidden="true">·</span>')}</nav>`;
 };

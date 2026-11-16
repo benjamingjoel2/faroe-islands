@@ -65,7 +65,7 @@ export default {
       summary: 'Von der Kirche hinunter über Weideland zur Gezeitenlagune und zum Strand.',
       length: 'Etwa 1 Stunde hin und zurück',
       farmland: 'Privates Weideland zwischen Kirche und Strand',
-      pay: 'Es wurde eine Torgebühr von 75 DKK erhoben; prüfen Sie die aktuelle Gebühr am Tor.',
+      pay: 'Hier wurde eine Torgebühr ab 75 DKK erhoben; prüfen Sie die aktuelle Gebühr am Tor.',
       guide: 'Nicht nötig.',
       rules: 'Nur bei Ebbe: Die Lagune läuft schnell voll. Halten Sie sich von den Heuwiesen fern und lassen Sie Hofgebäude und Museumshof in Ruhe.',
     },

@@ -62,7 +62,7 @@
       <div class="kpis kpis--2 mt-m"><div><span class="eyebrow">${esc(T.moving)}</span><b>${esc(total)}</b><span class="small muted">${esc(waits ? fmt(T.plusWaits, { n: waits }) : T.noWaits)}</span></div>
       <div><span class="eyebrow">${esc(T.legs)}</span><b>${steps.length}</b><span class="small muted">${esc([...new Set(steps.map(s => D.modes[s.e.mode]))].join(' · '))}</span></div></div>
       <ol class="route mt-m">${steps.map(s => `<li><span class="ic">${svg(s.e.mode)}</span><div>
-        <h4>${esc(D.nodes[s.from].name)} → ${esc(D.nodes[s.to].name)}</h4>
+        <h3 class="h4">${esc(D.nodes[s.from].name)} → ${esc(D.nodes[s.to].name)}</h3>
         <p>${esc(s.e.name || D.modes[s.e.mode])}</p>
         <div class="meta"><span>${esc(fmt(T.about, { n: s.e.mins }))}</span>${s.e.cost ? `<span>${esc(s.e.cost)}</span>` : ''}${s.e.weather ? `<span class="chip chip--dot">${esc(T.weatherFlag)}</span>` : ''}</div>
         ${s.e.booking ? `<p class="small mt-s">${md(s.e.booking)}</p>` : ''}</div></li>`).join('')}</ol>
