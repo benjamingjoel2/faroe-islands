@@ -1,0 +1,22 @@
+{
+  "name": "eighteen-islands",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Eighteen Islands — a static, four-language travel site for the Faroe Islands.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "images": "node scripts/images.mjs",
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.2"
+  }
+}
