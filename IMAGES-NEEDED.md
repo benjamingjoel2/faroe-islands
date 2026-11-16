@@ -30,8 +30,29 @@ These are named in the copy but shown only through a photo of their surroundings
 | Hugskotið / Sjóvinnuhúsið, Tórshavn (our office) | About, footer | No photo used |
 
 ## 3. Nice to have
-- A permitted photo of Atlantic Airways' helicopter in the Faroes (for the transport planner).
 - Winter photographs (snow, low sun, storm) for the "Four nights of winter light" journey, which currently uses a Tórshavn photo.
 - A close-up of Faroese knitwear (the knitting motif is drawn in SVG for now).
 
-__AUTO__
+## 4. Photos to upgrade to full resolution
+Wikimedia Commons was rate-limiting downloads when the site was built, so these photos were saved at the largest size it would serve, 1920 px. The originals are larger. Download each one from its source page, replace the file in `src/images/raw/`, delete its old files in `public/img/` and run `npm run images`.
+
+| File | Place | Current size | Source |
+|---|---|---|---|
+| `hero-cliffs-3.jpg` | Beinisvørð, Suðuroy | 1920×1278 | [source](https://commons.wikimedia.org/wiki/File:Beinisv%C3%B8r%C3%B0.Su%C3%B0uroy.1.jpg) |
+| `kirkjubour-2.jpg` | Kirkjubøur, Streymoy | 1920×1280 | [source](https://commons.wikimedia.org/wiki/File:Kirkjub%C3%B8ur_2026_33.jpg) |
+| `vagar-bour-1.jpg` | Bøur, Vágar | 1920×1277 | [source](https://commons.wikimedia.org/wiki/File:Is03102-Bour.jpg) |
+| `vagar-bour-2.jpg` | Bøur, Vágar | 1920×1277 | [source](https://commons.wikimedia.org/wiki/File:Is03109-Bour.jpg) |
+| `vestmanna-1.jpg` | Vestmanna bird cliffs, Streymoy | 1920×1278 | [source](https://commons.wikimedia.org/wiki/File:Vestmannabj%C3%B8rgini,_Faroe_Islands.JPG) |
+| `gjogv-2.jpg` | Gjógv, Eysturoy | 1920×1280 | [source](https://commons.wikimedia.org/wiki/File:Gj%C3%B3gv_2026_02.jpg) |
+| `vidoy-enniberg-1.jpg` | Enniberg, Viðoy | 1920×1536 | [source](https://commons.wikimedia.org/wiki/File:Enniberg_by_sea.jpg) |
+| `nolsoy-2.jpg` | Nólsoy village, Nólsoy | 1920×1279 | [source](https://commons.wikimedia.org/wiki/File:N%C3%B3lsoy,_Faroe_Islands_02.jpg) |
+| `sandoy-2.jpg` | Sandsvatn, Sandoy | 1920×1440 | [source](https://commons.wikimedia.org/wiki/File:Sandsvatn_a_Lake_on_Sandoy_in_the_Faroe_Islands.JPG) |
+| `suduroy-1.jpg` | Hvalba, Suðuroy | 1920×1337 | [source](https://commons.wikimedia.org/wiki/File:Hvalba.Su%C3%B0uroy.1.jpg) |
+| `helicopter-1.jpg` | Tórshavn | 1920×1440 | [source](https://commons.wikimedia.org/wiki/File:OY-HIL_helicopter_in_Torshavn.jpg) |
+| `basalt-1.jpg` | Froðba, Suðuroy | 1920×1278 | [source](https://commons.wikimedia.org/wiki/File:Columnar_basalt_at_Fro%C3%B0ba,_Faroe_Islands.jpg) |
+| `turf-roof-1.jpg` | Tjørnuvík, Streymoy | 1920×1277 | [source](https://commons.wikimedia.org/wiki/File:Is03071-Tjornuvik.jpg) |
+
+## 5. Source photos available but not used yet
+- `saksun-3.jpg`: Saksun valley in autumn
+- `helicopter-1.jpg`: Atlantic Airways helicopter (for the transport planner)
+
