@@ -57,8 +57,8 @@ export default {
       sunNote: 'Solsticio de verano en Tórshavn: amanecer a las {rise}, puesta de sol a las {set}',
       items: [
         { time: '06:40', t: 'Consultar la previsión', p: 'Viento, rachas y altura de las nubes en Kalsoy. Si la cresta no es viable, el día se dedica a Kunoy y Viðoy.', img: 'fog-hills-1.jpg', flag: 'Momento de decidir' },
-        { time: '08:30', t: 'Ferri a Kalsoy', p: 'Veinte minutos de Klaksvík a Syðradalur, con ida y vuelta reservadas.', img: 'ferry-1.jpg' },
-        { time: '09:20', t: 'Hacia el norte por los túneles', p: 'Túneles de un solo carril con apartaderos y, al final de la carretera, Trøllanes.', img: 'road-1.jpg' },
+        { time: '08:30', t: 'Ferri a Kalsoy', p: 'Veinte minutos de Klaksvík a Syðradalur, con ida y vuelta reservadas.', img: 'klaksvik-1.jpg' },
+        { time: '09:20', t: 'Hacia el norte por los túneles', p: 'Túneles de un solo carril con apartaderos y, al final de la carretera, Trøllanes.', img: 'kallur-1.jpg' },
         { time: '10:00', t: 'Faro de Kallur', p: 'A través de tierras de cultivo hasta lo alto del acantilado. La tarifa se paga al inicio. Si hay rachas, deténgase en el faro.', img: 'kallur-2.jpg', flag: 'Expuesto' },
         { time: '14:00', t: 'Kunoy', p: 'De vuelta sobre el agua y por el terraplén, para pasar una hora tranquila sobre el estrecho.', img: 'kunoy-1.jpg' },
         { time: '18:30', t: 'Puerto de Klaksvík', p: 'Cena en el pueblo, mientras llegan los barcos.', img: 'klaksvik-1.jpg' },

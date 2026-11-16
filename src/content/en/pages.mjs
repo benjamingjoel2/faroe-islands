@@ -57,8 +57,8 @@ export default {
       sunNote: 'Midsummer in Tórshavn: sunrise {rise}, sunset {set}',
       items: [
         { time: '06:40', t: 'Check the forecast', p: 'Wind, gusts and cloud base for Kalsoy. If the ridge is out, the day turns to Kunoy and Viðoy instead.', img: 'fog-hills-1.jpg', flag: 'Decision point' },
-        { time: '08:30', t: 'Ferry to Kalsoy', p: 'Twenty minutes from Klaksvík to Syðradalur, booked in both directions.', img: 'ferry-1.jpg' },
-        { time: '09:20', t: 'North through the tunnels', p: 'Single-lane tunnels with passing places, then Trøllanes at the end of the road.', img: 'road-1.jpg' },
+        { time: '08:30', t: 'Ferry to Kalsoy', p: 'Twenty minutes from Klaksvík to Syðradalur, booked in both directions.', img: 'klaksvik-1.jpg' },
+        { time: '09:20', t: 'North through the tunnels', p: 'Single-lane tunnels with passing places, then Trøllanes at the end of the road.', img: 'kallur-1.jpg' },
         { time: '10:00', t: 'Kallur lighthouse', p: 'Across farmland to the cliff top. The fee is paid at the start. Stop at the lighthouse if it’s gusty.', img: 'kallur-2.jpg', flag: 'Exposed' },
         { time: '14:00', t: 'Kunoy', p: 'Back over the water and across the causeway for a slow hour above the sound.', img: 'kunoy-1.jpg' },
         { time: '18:30', t: 'Klaksvík harbour', p: 'Dinner in town, with the boats coming in.', img: 'klaksvik-1.jpg' },

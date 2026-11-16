@@ -57,8 +57,8 @@ export default {
       sunNote: 'Solstice d’été à Tórshavn : lever du soleil {rise}, coucher {set}',
       items: [
         { time: '06:40', t: 'Consulter les prévisions', p: 'Vent, rafales et plafond nuageux sur Kalsoy. Si la crête est impraticable, la journée bascule sur Kunoy et Viðoy.', img: 'fog-hills-1.jpg', flag: 'Moment de décision' },
-        { time: '08:30', t: 'Ferry pour Kalsoy', p: 'Vingt minutes de Klaksvík à Syðradalur, réservé à l’aller comme au retour.', img: 'ferry-1.jpg' },
-        { time: '09:20', t: 'Vers le nord par les tunnels', p: 'Des tunnels à voie unique avec aires de croisement, puis Trøllanes, au bout de la route.', img: 'road-1.jpg' },
+        { time: '08:30', t: 'Ferry pour Kalsoy', p: 'Vingt minutes de Klaksvík à Syðradalur, réservé à l’aller comme au retour.', img: 'klaksvik-1.jpg' },
+        { time: '09:20', t: 'Vers le nord par les tunnels', p: 'Des tunnels à voie unique avec aires de croisement, puis Trøllanes, au bout de la route.', img: 'kallur-1.jpg' },
         { time: '10:00', t: 'Le phare de Kallur', p: 'À travers les terres agricoles jusqu’au sommet de la falaise. Le droit d’accès se règle au départ. Arrêtez-vous au phare s’il y a des rafales.', img: 'kallur-2.jpg', flag: 'Exposé' },
         { time: '14:00', t: 'Kunoy', p: 'Retour de l’autre côté de l’eau, puis la digue, pour une heure tranquille au-dessus du détroit.', img: 'kunoy-1.jpg' },
         { time: '18:30', t: 'Le port de Klaksvík', p: 'Dîner en ville, au retour des bateaux.', img: 'klaksvik-1.jpg' },

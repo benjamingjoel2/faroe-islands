@@ -57,8 +57,8 @@ export default {
       sunNote: 'Mittsommer in Tórshavn: Sonnenaufgang {rise}, Sonnenuntergang {set}',
       items: [
         { time: '06:40', t: 'Vorhersage prüfen', p: 'Wind, Böen und Wolkenuntergrenze für Kalsoy. Ist der Grat nicht machbar, geht es stattdessen nach Kunoy und Viðoy.', img: 'fog-hills-1.jpg', flag: 'Entscheidung' },
-        { time: '08:30', t: 'Fähre nach Kalsoy', p: 'Zwanzig Minuten von Klaksvík nach Syðradalur, in beide Richtungen gebucht.', img: 'ferry-1.jpg' },
-        { time: '09:20', t: 'Durch die Tunnel nach Norden', p: 'Einspurige Tunnel mit Ausweichbuchten, dann Trøllanes am Ende der Straße.', img: 'road-1.jpg' },
+        { time: '08:30', t: 'Fähre nach Kalsoy', p: 'Zwanzig Minuten von Klaksvík nach Syðradalur, in beide Richtungen gebucht.', img: 'klaksvik-1.jpg' },
+        { time: '09:20', t: 'Durch die Tunnel nach Norden', p: 'Einspurige Tunnel mit Ausweichbuchten, dann Trøllanes am Ende der Straße.', img: 'kallur-1.jpg' },
         { time: '10:00', t: 'Leuchtturm Kallur', p: 'Über Weideland bis zur Klippenkante. Die Gebühr wird am Ausgangspunkt bezahlt. Bei Böen am Leuchtturm umkehren.', img: 'kallur-2.jpg', flag: 'Exponiert' },
         { time: '14:00', t: 'Kunoy', p: 'Zurück übers Wasser und über den Damm – für eine ruhige Stunde über dem Sund.', img: 'kunoy-1.jpg' },
         { time: '18:30', t: 'Hafen von Klaksvík', p: 'Abendessen in der Stadt, während die Boote einlaufen.', img: 'klaksvik-1.jpg' },

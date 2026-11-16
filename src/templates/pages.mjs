@@ -263,7 +263,7 @@ export const place = (C, id) => {
     <div>${sec(`(01) ${C.ui.common.thePlace}`)}<dl class="facts mt-s">${P.facts.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl></div>
     <div class="stack">${statement(P.lead)}<div class="prose muted measure">${paras(P.body)}</div></div>
   </div>
-  <div class="mosaic mt-l">${r.gallery.concat([]).slice(0, 4).map((f, i) => `<div class="media rv-img">${pic(C, f, { sizes: i === 0 ? '(min-width:900px) 50vw, 100vw' : '(min-width:900px) 25vw, 50vw', maxW: i === 0 ? 2000 : 1200 })}</div>`).join('')}</div>
+  <div class="mosaic mt-l" data-n="${Math.min(4, r.gallery.length)}">${r.gallery.concat([]).slice(0, 4).map((f, i) => `<div class="media rv-img">${pic(C, f, { sizes: i === 0 ? '(min-width:900px) 50vw, 100vw' : '(min-width:900px) 25vw, 50vw', maxW: i === 0 ? 2000 : 1200 })}</div>`).join('')}</div>
 </section>
 
 ${basalt('wool')}
